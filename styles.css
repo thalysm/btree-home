@@ -8,26 +8,30 @@ body {
 
 .bg {
   background-image: url('assets/tree-b.svg');
+  bottom: -10%;
+  background-size: cover; 
   position: fixed;
-  bottom: 0;
   height: 70%;
   width: 100%;
   z-index: 1;
+  transform: scale(1.1);
   background-repeat: no-repeat;
+  transform-origin: center center;
   animation: moveBackground 10s infinite linear;
+  
 }
 
 @keyframes moveBackground {
   0% {
-      background-position: 10% 10%;
+      background-position: 50% 50%;
   }
 
   50% {
-      background-position: 15% 15%;
+      background-position: 100% 100%;
   }
 
   100% {
-      background-position: 10% 10%;
+      background-position: 50% 50%;
   }
 }
 
@@ -49,42 +53,45 @@ body {
     background-size: 50vw; /* Ajuste para "80vw" ou valor desejado */
   }
   .front{
-    height: 80%;
+    /* height: 80%; */
+    bottom: 0%;
+    animation-duration: 50s !important;
   }
-}
-@media (min-width: 768px){
-  .front{
-    height: 60%;
+  .bg{
+    bottom: -10%;
+    animation-duration: 50s;
   }
+
 }
-  
-
-
 
 .front {
   background-image: url('assets/tree-f.svg');
-  background-repeat: no-repeat;
+  background-size: cover; 
   position: fixed;
-  bottom: 0;
-
+  bottom: -10%;
+  height: 70%;
   width: 100%;
   z-index: 3;
-  animation: moveBackgroundFront 10s infinite linear;
+  transform-origin: center center;
+  background-repeat: no-repeat;
+  background-position: left 100% top 100%;
+  animation: moveBackgroundFront 10s infinite normal;
 }
 
 @keyframes moveBackgroundFront {
   0% {
-      background-position: 15% 15%;
+      background-position: 100% 100%;
   }
 
   50% {
-      background-position: 10% 10%;
+      background-position: 50% 50%;
   }
 
   100% {
-      background-position: 15% 15%;
+      background-position: 100% 100%;
   }
 }
+
 
 .footer {
   font-family: 'Poppins';
