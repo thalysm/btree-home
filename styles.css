@@ -63,20 +63,6 @@ body {
   }
 
 }
-<<<<<<< HEAD
-=======
-  
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  /* Estilos para o Chrome e Safari */
-  @media (max-width: 768px) {
-  .front{
-    height: 60%;
-  }
-}
-}
-
->>>>>>> 3a1a6ff86bbc619acf092cfb2f48da1f81de867a
 
 .front {
   background-image: url('assets/tree-f.svg');
