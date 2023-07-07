@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  background-color: #5093FE;
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+
+  background-image: url('assets/tree-b.svg');
+  position: fixed;
+  bottom: 0;
+  height: 70%;
+  width: 100%;
+  z-index: 1;
+  background-repeat: no-repeat;
+  animation: moveBackground 10s infinite linear;
+}
+
+@keyframes moveBackground {
+  0% {
+      background-position: 10% 10%;
+  }
+
+  50% {
+      background-position: 15% 15%;
+  }
+
+  100% {
+      background-position: 10% 10%;
+  }
+}
+
+
+.icon {
+  background-image: url('assets/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20vw;
+  position: fixed;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .icon {
+    background-size: 50vw; /* Ajuste para "80vw" ou valor desejado */
+  }
+  .front{
+    height: 80%;
+  }
+}
+@media (min-width: 768px){
+  .front{
+    height: 60%;
+  }
+}
+  
+
+
+
+.front {
+  background-image: url('assets/tree-f.svg');
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+  z-index: 3;
+  animation: moveBackgroundFront 10s infinite linear;
+}
+
+@keyframes moveBackgroundFront {
+  0% {
+      background-position: 15% 15%;
+  }
+
+  50% {
+      background-position: 10% 10%;
+  }
+
+  100% {
+      background-position: 15% 15%;
+  }
+}
+
+.footer {
+  font-family: 'Poppins';
+  font-weight: 700;
+  position: fixed;
+  bottom: 0;
+  height: 4em; /* Altura fixa para o rodapé */
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  z-index: 4;
+}
