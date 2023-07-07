@@ -59,6 +59,14 @@ body {
 }
   
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* Estilos para o Chrome e Safari */
+  @media (max-width: 768px) {
+  .front{
+    height: 60%;
+  }
+}
+}
 
 
 .front {
